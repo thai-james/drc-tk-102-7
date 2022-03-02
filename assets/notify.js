@@ -168,13 +168,13 @@
             phone: `${phone.val()}`
         }
         const jsonString = JSON.stringify(toSend);
-//         $.ajax({
-//             url: url,
-//             type: 'POST',
-//             data: {jsonString},
-//              success: function (response) {},
-//              error: function (error) {}
-//          });
+        $.ajax({
+            url: url,
+            type: 'POST',
+            data: {jsonString},
+             success: function (response) {},
+             error: function (error) {}
+         });
         var submit_form = document.getElementById('sheetdb-form');
         fetch(submit_form.action, {
             method : "POST",
